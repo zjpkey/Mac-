@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6198" systemVersion="14A297b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1605" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6198"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -641,12 +641,12 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller - Window-->
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
@@ -662,20 +662,241 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="276" y="189"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" alphaValue="0.90000000000000002" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="304"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="aDM-Fd-bm6">
+                                <rect key="frame" x="31" y="174" width="83" height="32"/>
+                                <shadow key="shadow">
+                                    <color key="color" red="0.60617897727272729" green="0.58325292763232783" blue="0.38250182304372871" alpha="1" colorSpace="calibratedRGB"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="7" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jfw-BZ-Zdg">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuanbut:" target="XfG-lQ-9wD" id="aUJ-cY-q2i"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="Swb-0a-lCL">
+                                <rect key="frame" x="31" y="141" width="83" height="32"/>
+                                <shadow key="shadow">
+                                    <color key="color" red="0.60617897730000003" green="0.58325292760000003" blue="0.38250182300000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="4" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XlV-8y-myX">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuanbut:" target="XfG-lQ-9wD" id="PHi-AH-fcF"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="fND-vv-P54">
+                                <rect key="frame" x="108" y="141" width="83" height="32"/>
+                                <shadow key="shadow">
+                                    <color key="color" red="0.60617897730000003" green="0.58325292760000003" blue="0.38250182300000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="5" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Gjn-j7-imk">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuanbut:" target="XfG-lQ-9wD" id="sIS-Gt-L3R"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="zAY-6g-H4M">
+                                <rect key="frame" x="185" y="141" width="83" height="32"/>
+                                <shadow key="shadow">
+                                    <color key="color" red="0.60617897730000003" green="0.58325292760000003" blue="0.38250182300000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="6" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7zT-dd-yKp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuanbut:" target="XfG-lQ-9wD" id="lTN-jg-qHp"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="sHA-Jm-ryH">
+                                <rect key="frame" x="31" y="108" width="83" height="32"/>
+                                <shadow key="shadow">
+                                    <color key="color" red="0.60617897730000003" green="0.58325292760000003" blue="0.38250182300000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rPe-AD-mQr">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuanbut:" target="XfG-lQ-9wD" id="g9S-Xn-fh6"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="gXV-3j-F4W">
+                                <rect key="frame" x="108" y="108" width="83" height="32"/>
+                                <shadow key="shadow">
+                                    <color key="color" red="0.60617897730000003" green="0.58325292760000003" blue="0.38250182300000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="2" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CAn-pv-Qic">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuanbut:" target="XfG-lQ-9wD" id="51g-mD-miv"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="Yg1-DN-iQH">
+                                <rect key="frame" x="185" y="108" width="83" height="32"/>
+                                <shadow key="shadow">
+                                    <color key="color" red="0.60617897730000003" green="0.58325292760000003" blue="0.38250182300000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="3" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="anv-Cp-Sd2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuanbut:" target="XfG-lQ-9wD" id="rxQ-lW-odp"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F2K-ss-279">
+                                <rect key="frame" x="31" y="75" width="83" height="32"/>
+                                <shadow key="shadow">
+                                    <color key="color" red="0.60617897730000003" green="0.58325292760000003" blue="0.38250182300000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="0" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b4d-8d-oBu">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuanbut:" target="XfG-lQ-9wD" id="Vch-DH-lH1"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="9" translatesAutoresizingMaskIntoConstraints="NO" id="f0U-Pu-mb9">
+                                <rect key="frame" x="185" y="174" width="83" height="32"/>
+                                <shadow key="shadow">
+                                    <color key="color" red="0.60617897730000003" green="0.58325292760000003" blue="0.38250182300000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="9" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5Ql-q9-uFo">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuanbut:" target="XfG-lQ-9wD" id="8pc-1M-Ag9"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gsm-id-eTq">
+                                <rect key="frame" x="108" y="174" width="83" height="32"/>
+                                <shadow key="shadow">
+                                    <color key="color" red="0.60617897730000003" green="0.58325292760000003" blue="0.38250182300000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="8" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aCl-P8-T4b">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuanbut:" target="XfG-lQ-9wD" id="PbL-gf-RW7"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iid-WF-ZJM">
+                                <rect key="frame" x="359" y="114" width="89" height="89"/>
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wei-bR-DmM">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="16" name=".HelveticaNeueDeskInterface-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jia:" target="XfG-lQ-9wD" id="X9V-jm-Egg"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ve1-gh-8ph">
+                                <rect key="frame" x="468" y="114" width="89" height="89"/>
+                                <buttonCell key="cell" type="smallSquare" title="—" bezelStyle="smallSquare" image="NSAddTemplate" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rJ9-tP-7SD">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jian:" target="XfG-lQ-9wD" id="sTs-Ys-6EA"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIP-PG-JiK">
+                                <rect key="frame" x="359" y="10" width="89" height="90"/>
+                                <buttonCell key="cell" type="smallSquare" title="X" bezelStyle="smallSquare" image="NSAddTemplate" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uJc-we-H5i">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cheng:" target="XfG-lQ-9wD" id="n26-iq-zwC"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHi-SL-ZPR">
+                                <rect key="frame" x="37" y="5" width="225" height="70"/>
+                                <buttonCell key="cell" type="smallSquare" title="=" bezelStyle="smallSquare" image="NSAddTemplate" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="t1D-4X-EHJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="34" name=".HelveticaNeueDeskInterface-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="jisuannum:" target="XfG-lQ-9wD" id="UkZ-Ey-xsR"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y7n-IG-feb">
+                                <rect key="frame" x="114" y="78" width="148" height="29"/>
+                                <buttonCell key="cell" type="smallSquare" title="清除" bezelStyle="smallSquare" image="NSAddTemplate" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="f0P-lg-ikg">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="qingchu:" target="XfG-lQ-9wD" id="iP9-aa-Tis"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRV-eA-VJp">
+                                <rect key="frame" x="468" y="10" width="89" height="90"/>
+                                <buttonCell key="cell" type="smallSquare" title="/" bezelStyle="smallSquare" image="NSAddTemplate" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Q49-cy-TsF">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="chu:" target="XfG-lQ-9wD" id="nEx-24-b8T"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C34-sc-vPm">
+                                <rect key="frame" x="37" y="225" width="522" height="64"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" placeholderString="" drawsBackground="YES" id="S7k-bf-CWG">
+                                    <font key="font" size="40" name=".HelveticaNeueDeskInterface-Regular"/>
+                                    <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <shadow key="shadow">
+                            <size key="offset" width="1" height="-1"/>
+                            <color key="color" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </shadow>
                     </view>
+                    <connections>
+                        <outlet property="b0" destination="F2K-ss-279" id="LuM-kw-JG7"/>
+                        <outlet property="b1" destination="sHA-Jm-ryH" id="9Mu-Gh-f5w"/>
+                        <outlet property="b2" destination="gXV-3j-F4W" id="Fp2-ig-lkA"/>
+                        <outlet property="b3" destination="Yg1-DN-iQH" id="H1b-tb-m1z"/>
+                        <outlet property="b4" destination="Swb-0a-lCL" id="496-T7-zWc"/>
+                        <outlet property="b5" destination="fND-vv-P54" id="M7d-pE-tuo"/>
+                        <outlet property="b6" destination="zAY-6g-H4M" id="XV6-EZ-dZU"/>
+                        <outlet property="b7" destination="aDM-Fd-bm6" id="CU1-cz-3ey"/>
+                        <outlet property="b8" destination="Gsm-id-eTq" id="GEH-49-BBr"/>
+                        <outlet property="b9" destination="f0U-Pu-mb9" id="7xm-HF-Xeg"/>
+                        <outlet property="textfilednum" destination="C34-sc-vPm" id="01P-tP-CAb"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="A0h-OI-wln"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="184" y="553"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+    </resources>
 </document>
