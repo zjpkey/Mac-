@@ -61,6 +61,7 @@
             self.textfilednum.stringValue = [NSString stringWithFormat:@"%ld",(long)(self.str1.integerValue * self.str2.integerValue)];;
     }
     if (self.type == 4) {
+        //0不能作为分母
         if (self.str2.integerValue == 0) {
             self.textfilednum.stringValue = [NSString stringWithFormat:@"不是数字"];
             return;
