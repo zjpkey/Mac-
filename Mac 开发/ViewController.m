@@ -69,12 +69,13 @@
     }
 
 }
+//清除按钮事件
 - (IBAction)qingchu:(NSButton *)sender {
     self.str1 = @"";
     self.str2 = @"";
     self.textfilednum.stringValue = @"";
 }
-
+//清除
 - (void)clean {
     self.textfilednum.stringValue = @"";
 }
