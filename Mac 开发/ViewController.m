@@ -12,6 +12,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.textfilednum setAllowsExpansionToolTips:YES];
 
     // Do any additional setup after loading the view.
 }
@@ -52,13 +53,13 @@
 }
 - (IBAction)jisuannum:(NSButton *)sender {
     if (self.type == 1) {
-          self.textfilednum.stringValue = [NSString stringWithFormat:@"%ld",(long)(self.str1.integerValue + self.str2.integerValue)];;
+          self.textfilednum.stringValue = [NSString stringWithFormat:@"%f",(CGFloat)(self.str1.floatValue + self.str2.floatValue)];;
     }
     if (self.type == 2) {
-            self.textfilednum.stringValue = [NSString stringWithFormat:@"%ld",(long)(self.str1.integerValue - self.str2.integerValue)];;
+            self.textfilednum.stringValue = [NSString stringWithFormat:@"%f",(CGFloat)(self.str1.floatValue - self.str2.floatValue)];;
     }
     if (self.type == 3) {
-            self.textfilednum.stringValue = [NSString stringWithFormat:@"%ld",(long)(self.str1.integerValue * self.str2.integerValue)];;
+            self.textfilednum.stringValue = [NSString stringWithFormat:@"%f",(CGFloat)(self.str1.floatValue * self.str2.floatValue)];;
     }
     if (self.type == 4) {
         //0不能作为分母
@@ -66,7 +67,7 @@
             self.textfilednum.stringValue = [NSString stringWithFormat:@"不是数字"];
             return;
         }
-            self.textfilednum.stringValue = [NSString stringWithFormat:@"%ld",(long)(self.str1.integerValue / self.str2.integerValue)];;
+            self.textfilednum.stringValue = [NSString stringWithFormat:@"%f",(CGFloat)(self.str1.floatValue / self.str2.floatValue)];;
     }
 
 }
